@@ -46,22 +46,45 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+
+/* Gaya untuk container banner */
 .main-content-banner {
+  position: relative;
   width: 100%;
   height: 200px;
-  background-image: url("https://picsum.photos/150");
+  overflow: hidden;
+}
+
+/* Gaya untuk container banner */
+.main-content-banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  margin-bottom: 20px;
+  opacity: 0; /* Default opacity */
+  transition: opacity 4s ease-in-out;
 }
+
+.banner-slide.active {
+  opacity: 1; /* Opacity for active slide */
+}
+
 .caption {
   margin-right: 20px;
   margin-left: 20px;
 }
 .item-icon {
-  height: 30px;
-  width: 30px;
-  background-image: url("https://picsum.photos/25");
+  height: 50px;
+  width: 50px;
+  background-image: url("https://preview.redd.it/can-someone-make-inosuke-from-demon-slayer-i-tried-to-in-v0-z34uob4rlv3b1.jpg?width=640&crop=smart&auto=webp&s=2e959ce55dabe1457e9d2ae4773c092b3f5527e5");
   border-radius: 50%;
   background-size: cover;
   margin-right: 9px;
@@ -177,7 +200,7 @@ h2 {
   padding: 1px;
 }
 .item-icon2-list {
-  height: 30px;
+  height: 50px;
   width: 50px;
   background-image: url("../assets/flight.png");
   border-radius: 50%;
@@ -186,7 +209,7 @@ h2 {
   margin-right: 9px;
 }
 .item-icon2-bintang {
-  height: 30px;
+  height: 50px;
   width: 50px;
   background-image: url("../assets/favourites.png");
   border-radius: 50%;

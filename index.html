@@ -29,13 +29,25 @@
 
       <section class="main-content">
         <article class="main-content-item">
-          <div class="main-content-banner"></div>
+          <div class="main-content-banner">
+            <div
+              class="banner-slide active"
+              style="background-image: url('../assets/japan.jpg')"
+            ></div>
+            <div
+              class="banner-slide"
+              style="background-image: url('../assets/bali.jpeg')"
+            ></div>
+            <div
+              class="banner-slide"
+              style="background-image: url('../assets/london.jpg')"
+            ></div>
+          </div>
           <div class="caption">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque labore eum sit cum ad itaque repudiandae asperiores
-              consectetur rerum reiciendis praesentium aliquam deserunt qui
-              ratione adipisci, quae aperiam maxime. Accusantium!.
+              “What the hell are these creatures?! The master and ruler of this
+              land. This might be the guardian spirit of this land, so we
+              shouldn’t be attacking it carelessly.”
             </p>
           </div>
 
@@ -43,8 +55,8 @@
             <div class="item-icon"></div>
 
             <div>
-              <h6>Lorem ipsum.</h6>
-              <p>blablabla</p>
+              <h6>Inosuke Hashibira</h6>
+              <p>a Demon Slayer in the Demon Slayer Corps</p>
             </div>
           </div>
           <hr class="divider" />
@@ -81,7 +93,7 @@
           </div>
         </article>
 
-        <form class="main-content-item">
+        <form class="main-content-item" id="contactForm">
           <h3>Contact Us</h3>
           <label for="name"
             >Sales akan menghubungi Anda 1x24 jam setelah data kami terima.
@@ -93,6 +105,7 @@
             placeholder="First and last name"
             id="name"
             name="name"
+            required
           />
           <label for="email">Email Address: </label>
           <input
@@ -100,6 +113,7 @@
             placeholder="example@gmail.com"
             id="email"
             email="email"
+            required
           />
           <label for="ask">What are you interested in? </label>
           <select id="ask" name="ask" required>
@@ -107,7 +121,7 @@
             <option value="1">Beach</option>
             <option value="2">Forest</option>
           </select>
-          <button type="button" class="button1">Submit</button>
+          <button type="submit" class="button1">Submit</button>
         </form>
       </section>
 
@@ -118,10 +132,9 @@
             <div class="main-item">
               <div class="item-icon2-list"></div>
               <div>
-                <h6>Bali</h6>
+                <h6>Thailand</h6>
                 <p class="p-list">
-                  Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
-                  menarik.
+                  Ujung kakinya di lautan dan kepalanya di hutan.
                 </p>
               </div>
             </div>
@@ -130,21 +143,15 @@
               <div class="item-icon2-list"></div>
               <div>
                 <h6>Japan</h6>
-                <p class="p-list">
-                  Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner
-                  menarik.
-                </p>
+                <p class="p-list">Rasakan budaya, kuliner, dan teknologinya.</p>
               </div>
             </div>
 
             <div class="main-item">
               <div class="item-icon2-list"></div>
               <div>
-                <h6>Singapore</h6>
-                <p class="p-list">
-                  Travel dan wisata di Singapore. Kunjungi cagar budaya dan
-                  kuliner menarik.
-                </p>
+                <h6>London</h6>
+                <p class="p-list">Eksplore landmark London yang menakjubkan.</p>
               </div>
             </div>
           </div>
@@ -157,10 +164,9 @@
             <div class="main-item">
               <div class="item-icon2-bintang"></div>
               <div>
-                <h6>Bandung</h6>
+                <h6>Sabang</h6>
                 <p class="p-list">
-                  Travel dan wisata di Bandung. Kunjungi cagar budaya dan
-                  kuliner menarik.
+                  Keindahan alam yang indah di ujung Indonesia.
                 </p>
               </div>
             </div>
@@ -168,11 +174,8 @@
             <div class="main-item">
               <div class="item-icon2-bintang"></div>
               <div>
-                <h6>Surabaya</h6>
-                <p class="p-list">
-                  Travel dan wisata di Surabaya. Kunjungi cagar budaya dan
-                  kuliner menarik.
-                </p>
+                <h6>Bali</h6>
+                <p class="p-list">Melihat budaya Bali yang mengakar.</p>
               </div>
             </div>
 
@@ -181,8 +184,7 @@
               <div>
                 <h6>Lainnya</h6>
                 <p class="p-list">
-                  Travel dan wisata di Surabaya. Kunjungi cagar budaya dan
-                  kuliner menarik.
+                  Kunjungi cagar budaya dan kuliner menarik lainnya.
                 </p>
               </div>
             </div>
@@ -214,5 +216,7 @@
         <span>&copy;Martob. All Right Reserved.</span>
       </p>
     </footer>
+
+    <script src="js/scrpt.js"></script>
   </body>
 </html>
