@@ -47,7 +47,7 @@
               <p>blablabla</p>
             </div>
           </div>
-
+          <hr class="divider" />
           <div class="reason">
             <p>Alasan kenapa harus memilih layanan kami:</p>
           </div>
@@ -88,14 +88,24 @@
           </label>
           <br /><br />
           <label for="name">Your Name: </label>
-          <input type="text" id="name" name="name" />
+          <input
+            type="text"
+            placeholder="First and last name"
+            id="name"
+            name="name"
+          />
           <label for="email">Email Address: </label>
-          <input type="text" id="email" email="email" />
+          <input
+            type="text"
+            placeholder="example@gmail.com"
+            id="email"
+            email="email"
+          />
           <label for="ask">What are you interested in? </label>
-          <select id="ask" name="ask">
-            <option></option>
-            <option>Beach</option>
-            <option>Forest</option>
+          <select id="ask" name="ask" required>
+            <option value="" disabled selected hidden>Select option</option>
+            <option value="1">Beach</option>
+            <option value="2">Forest</option>
           </select>
           <button type="button" class="button1">Submit</button>
         </form>
@@ -103,7 +113,6 @@
 
       <section class="package" id="package-section">
         <h2>Our Package</h2>
-        <hr class="divider3" />
         <div class="col-list">
           <div class="places">
             <div class="main-item">
