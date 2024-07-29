@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #acb6e5, #86fde8);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3); /* Warna background semi-transparan */
+  backdrop-filter: blur(10px); /* Efek kaca buram */
+  -webkit-backdrop-filter: blur(10px); /* Efek kaca buram untuk Safari */
+  border-radius: 8px; /* Opsional: membuat sudut melengkung */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Opsional: menambahkan border semi-transparan */
+}
+
+.nav-container {
+  display: flex;
+}
+.nav-item {
+  padding: 8px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo-icon {
+  background-image: url("../assets/logo.png");
+  height: 75px;
+  width: 120px;
+  background-size: cover;
+}
+.main-title {
+  text-align: center;
+  margin: 40px 0;
+}
+.main-content {
+  padding: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content-banner {
+  width: 100%;
+  height: 200px;
+  background-image: url("https://picsum.photos/150");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.caption {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.item-icon {
+  height: 30px;
+  width: 30px;
+  background-image: url("https://picsum.photos/25");
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 9px;
+}
+.main-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+.main-item div {
+  margin-left: 15px;
+}
+.main-item h6 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.main-item p {
+  margin: 0;
+  font-size: 1em;
+}
+input {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.tombol {
+  margin-bottom: 100px;
+}
+button {
+  height: 38px;
+  background-color: rgb(104, 188, 214);
+  border: none;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Kelas khusus untuk mengatur lebar tombol */
+.button1 {
+  width: 75%;
+}
+
+.button2 {
+  width: 15%;
+  margin: 0 auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #333;
+  color: white;
+}
+
+.copyright-text {
+  color: var(--color-lgrey);
+  text-align: center;
+  font-family: "Roboto", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    "Hiragino Sans", "游ゴシック", YuGothic, "メイリオ", sans-serif;
+  font-weight: 500;
+}
+label {
+  text-align: left;
+  width: 75%;
+  font-size: 15px;
+}
+select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.package {
+  padding: 50px;
+}
+.col-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+h6 {
+  font-family: cursive;
+}
+.p-list {
+  text-align: start;
+}
+.places {
+  display: flex;
+}
+.bintang {
+  display: flex;
+}
+h2 {
+  text-align: center;
+  padding: 1px;
+}
+.item-icon2-list {
+  height: 30px;
+  width: 50px;
+  background-image: url("../assets/flight.png");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 9px;
+}
+.item-icon2-bintang {
+  height: 30px;
+  width: 50px;
+  background-image: url("../assets/favourites.png");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 9px;
+}
+.divider {
+  width: 90px; /* Panjang garis */
+  height: 3px; /* Ketebalan garis */
+  background-color: #333;
+  border: none;
+}
+.divider2 {
+  height: 3px; /* Ketebalan garis */
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+.divider3 {
+  width: 90px;
+  height: 3px; /* Ketebalan garis */
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+.reason {
+  width: 100%;
+  margin-top: 30px;
+}
+.main-item2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.item-icon1,
+.item-icon2,
+.item-icon3,
+.item-icon4 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 9px;
+}
+.item-icon1 {
+  background-image: url("../assets/number-one.png");
+}
+.item-icon2 {
+  background-image: url("../assets/number-2.png");
+}
+.item-icon3 {
+  background-image: url("../assets/number-3.png");
+}
+.item-icon4 {
+  background-image: url("../assets/number-4.png");
+}
+.quote {
+  text-align: center;
+}
+
+.quote {
+  padding: 20px;
+}
+
+/*
+
+
+
+*/
+/* Media Queries */
+@media (max-width: 1024px) {
+  .col-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .places,
+  .bintang {
+    flex-direction: column;
+  }
+  .main-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-list {
+    padding: 20px;
+  }
+  .main-content {
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+  .main-item {
+    padding: 10px;
+  }
+}
