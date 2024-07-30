@@ -50,63 +50,26 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-/**.main-content-banner {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.sliders {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.slider img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-**/
 .main-content-banner {
   width: 100%;
   height: 200px;
-  position: relative;
+  margin-bottom: 20px;
   overflow: hidden;
+  box-shadow: 3px 3px 16px rgba(169, 89, 204, 0.966);
 }
-.sliders {
-  display: flex;
-  width: 300%;
-  height: 100%;
-  animation: slide 15s infinite;
-}
-.slider {
-  width: 33.33%;
-  transition: transform 1s ease;
-}
-.slider img {
+.container {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateX(-33.33%);
-  }
-  66% {
-    transform: translateX(-66.66%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.images img {
+  width: 100%;
+  height: 200px;
+  display: none; /* Initially hide all images */
 }
+.images img:first-child {
+  display: block; /* Show the first image */
+}
+
 .caption {
   margin-right: 20px;
   margin-left: 20px;
