@@ -23,6 +23,10 @@ nav {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
 .logo-icon {
   background-image: url("../assets/logo.png");
   height: 75px;
@@ -128,6 +132,7 @@ button {
   color: white;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Kelas khusus untuk mengatur lebar tombol */
@@ -136,7 +141,7 @@ button {
 }
 
 .button2 {
-  width: 15%;
+  width: 30%;
   margin: 0 auto;
 }
 .button-container {
