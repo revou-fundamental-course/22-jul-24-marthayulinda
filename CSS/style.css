@@ -51,14 +51,6 @@ a:hover {
   align-items: center;
 }
 
-/* Gaya untuk container banner */
-.main-content-banner {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
 .main-content-banner {
   width: 100%;
   height: 200px;
