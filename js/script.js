@@ -30,3 +30,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+//banner
+document.addEventListener("DOMContentLoaded", () => {
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slider");
+  const totalSlides = slides.length;
+
+  const showSlides = () => {
+    slides.forEach((slide, index) => {
+      slide.style.transform = `translateX(${(index - slideIndex) * 100}%)`;
+    });
+    slideIndex = (slideIndex + 1) % totalSlides;
+  };
+
+  setInterval(showSlides, 5000); // Ubah gambar setiap 5 detik
+});
