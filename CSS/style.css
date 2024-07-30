@@ -157,9 +157,7 @@ select {
   box-sizing: border-box;
   font-family: monospace;
 }
-.package {
-  padding: 50px;
-}
+
 .col-list {
   display: flex;
   flex-wrap: wrap;
@@ -186,7 +184,7 @@ h2 {
 .item-icon2-list {
   height: 50px;
   width: 50px;
-  background-image: url("../assets/flight.png");
+  background-image: url("https://cdn-icons-png.flaticon.com/128/4283/4283062.png");
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -195,7 +193,7 @@ h2 {
 .item-icon2-bintang {
   height: 50px;
   width: 50px;
-  background-image: url("../assets/favourites.png");
+  background-image: url("https://cdn-icons-png.flaticon.com/128/477/477406.png");
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -216,12 +214,6 @@ h2 {
 .reason {
   width: 100%;
   margin-top: 30px;
-}
-.main-item2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
 }
 
 .item-icon1,
