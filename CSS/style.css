@@ -35,7 +35,8 @@ a:hover {
 }
 .main-title {
   text-align: center;
-  margin: 40px 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 .main-content {
   padding: 50px;
@@ -52,18 +53,18 @@ a:hover {
 }
 .main-content-banner {
   width: 100%;
-  height: 200px;
-  margin-bottom: 20px;
+  height: 250px;
+  margin-bottom: 10px;
   overflow: hidden;
   box-shadow: 3px 3px 16px rgba(169, 89, 204, 0.966);
 }
 .container {
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 .images img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   display: none; /* Initially hide all images */
 }
 .images img:first-child {
