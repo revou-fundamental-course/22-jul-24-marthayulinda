@@ -54,7 +54,7 @@ a:hover {
 .main-content-banner {
   width: 100%;
   height: 250px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   overflow: hidden;
   box-shadow: 3px 3px 16px rgba(189, 118, 220, 0.966);
 }
@@ -124,12 +124,9 @@ button {
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/* Kelas khusus untuk mengatur lebar tombol */
 .button1 {
   width: 75%;
 }
-
 .button2 {
   width: 30%;
   margin: 0 auto;
@@ -145,7 +142,6 @@ footer {
   background: #333;
   color: white;
 }
-
 .copyright-text {
   color: var(--color-lgrey);
   text-align: center;
@@ -168,7 +164,6 @@ select {
   box-sizing: border-box;
   font-family: monospace;
 }
-
 .col-list {
   display: flex;
   flex-wrap: wrap;
@@ -238,7 +233,7 @@ h2 {
   margin-right: 9px;
 }
 .item-icon1 {
-  background-image: url("../assets/number-one.png");
+  background-image: url("../assets/number-1.png");
 }
 .item-icon2 {
   background-image: url("../assets/number-2.png");
