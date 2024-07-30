@@ -59,26 +59,13 @@ a:hover {
   overflow: hidden;
 }
 
-/* Gaya untuk container banner */
 .main-content-banner {
-  position: relative;
   width: 100%;
   height: 200px;
-  overflow: hidden;
-}
-
-.banner-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  background-image: url("https://picsum.photos/150");
   background-size: cover;
   background-position: center;
-  opacity: 0; /* Default opacity */
-  transition: opacity 4s ease-in-out;
-}
-
-.banner-slide.active {
-  opacity: 1; /* Opacity for active slide */
+  margin-bottom: 20px;
 }
 
 .caption {

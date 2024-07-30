@@ -1,27 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let currentSlide = 0;
-  const slides = document.querySelectorAll(".banner-slide");
-  const totalSlides = slides.length;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.style.opacity = i === index ? "1" : "0";
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
-  }
-
-  // Tampilkan slide pertama
-  showSlide(currentSlide);
-
-  // Ubah slide setiap 5 detik
-  setInterval(nextSlide, 5000);
-});
-
-// Validasi form
+//validasi form
 document
   .getElementById("contactForm")
   .addEventListener("submit", function (event) {
