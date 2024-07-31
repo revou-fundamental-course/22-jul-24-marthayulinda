@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  // Smooth scrollnavigasi
+  // Smooth scroll navigasi
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
