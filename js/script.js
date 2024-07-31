@@ -1,89 +1,79 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Validasi form
-  document
-    .getElementById("contactForm")
-    .addEventListener("submit", function (event) {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var ask = document.getElementById("ask").value;
+// Form Validation Functions
+function validateForm(event) {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var ask = document.getElementById("ask").value;
 
-      // Clear previous error messages
-      clearErrors();
+  clearErrors();
 
-      var isValid = true;
+  var isValid = true;
 
-      if (name === "") {
-        showError("name", "*name must be filled out");
-        isValid = false;
-      }
-      if (email === "") {
-        showError("email", "*email must be filled out");
-        isValid = false;
-      }
-      if (ask === "") {
-        showError("ask", "*please select an option");
-        isValid = false;
-      }
-
-      if (!isValid) {
-        event.preventDefault();
-      } else {
-        alert("Form submitted successfully!");
-      }
-    });
-
-  // Clear previous error messages
-  function clearErrors() {
-    var errorMessages = document.querySelectorAll(".error-message");
-    errorMessages.forEach(function (msg) {
-      msg.remove();
-    });
+  if (name === "") {
+    showError("name", "*name must be filled out");
+    isValid = false;
+  }
+  if (email === "") {
+    showError("email", "*email must be filled out");
+    isValid = false;
+  }
+  if (ask === "") {
+    showError("ask", "*please select an option");
+    isValid = false;
   }
 
-  // Show error message
-  function showError(inputId, message) {
-    var inputElement = document.getElementById(inputId);
-    var errorMessage = document.createElement("div");
-    errorMessage.className = "error-message";
-    errorMessage.style.color = "red";
-    errorMessage.innerText = message;
-    inputElement.parentNode.insertBefore(
-      errorMessage,
-      inputElement.nextSibling
-    );
+  if (!isValid) {
+    event.preventDefault();
+  } else {
+    alert("Form submitted successfully!");
   }
+}
 
-  // Smooth scroll navigasi
+function clearErrors() {
+  var errorMessages = document.querySelectorAll(".error-message");
+  errorMessages.forEach(function (msg) {
+    msg.remove();
+  });
+}
+
+function showError(inputId, message) {
+  var inputElement = document.getElementById(inputId);
+  var errorMessage = document.createElement("div");
+  errorMessage.className = "error-message";
+  errorMessage.style.color = "red";
+  errorMessage.innerText = message;
+  inputElement.parentNode.insertBefore(errorMessage, inputElement.nextSibling);
+}
+
+// Smooth Scroll Navigation Function
+function smoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-
       document.querySelector(this.getAttribute("href")).scrollIntoView({
         behavior: "smooth",
       });
     });
   });
+}
 
-  // Autoslide
+// Automatic Image Slider Function
+function automaticSlide() {
   var firstIndex = 0;
-  function automaticSlide() {
-    var pics;
+  function slide() {
     const img = document.querySelectorAll(".images img");
-    for (pics = 0; pics < img.length; pics++) {
-      img[pics].style.display = "none";
-    }
+    img.forEach((pic) => (pic.style.display = "none"));
     firstIndex++;
     if (firstIndex > img.length) {
       firstIndex = 1;
     }
     img[firstIndex - 1].style.display = "block";
-    setTimeout(automaticSlide, 2000);
+    setTimeout(slide, 2000);
   }
-  automaticSlide();
-});
+  slide();
+}
 
-//bold nav
-document.addEventListener("DOMContentLoaded", function () {
+// Bold Navigation on Scroll Function
+function boldNav() {
   const sections = document.querySelectorAll("main > section, main > article");
   const navLinks = document.querySelectorAll(".nav-item");
 
@@ -98,4 +88,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   changeActiveNav();
   window.addEventListener("scroll", changeActiveNav);
-});
+}
+
+// Initialize all functions
+function init() {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", validateForm);
+  smoothScroll();
+  automaticSlide();
+  boldNav();
+}
+
+// Run initialization on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", init);

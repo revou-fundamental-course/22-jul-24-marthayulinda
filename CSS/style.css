@@ -1,15 +1,17 @@
+/**Mengatur seluruh font web dan background**/
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #acb6e5, #86fde8);
 }
+
+/**Tampilan bar navigasi**/
 nav {
   display: flex;
   justify-content: space-between;
   padding: 12px;
   align-items: center;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3); /* Backgound efek kaca buram */
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Efek kaca buram untuk Safari */
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: sticky;
@@ -17,6 +19,7 @@ nav {
   z-index: 1000;
 }
 
+/* Penampung elemen navigasi */
 .nav-container {
   display: flex;
 }
@@ -26,23 +29,32 @@ nav {
   text-decoration: none;
   color: black;
 }
+
+/* agar navigasi tampak bold ketika diarahkan kursor, 
+dan aktif ketika sedang berada di halamannya*/
 .nav-item:hover {
   font-weight: bold;
 }
 .nav-item.active {
   font-weight: bold;
 }
+
+/* Logo agent */
 .logo-icon {
   background-image: url("../assets/logo.png");
   height: 75px;
   width: 120px;
   background-size: cover;
 }
+
+/* Judul home */
 .main-title {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0px;
 }
+
+/* section 1, Penampung bagian konten pertama */
 .main-content {
   padding: 50px;
   margin-left: 60px;
@@ -51,12 +63,16 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+/* Bagian Pertama dari main content */
 .main-content-item {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Tempat menampung gambar autoslide */
 .main-content-banner {
   width: 100%;
   height: 250px;
@@ -64,30 +80,38 @@ nav {
   overflow: hidden;
   box-shadow: 3px 3px 16px rgba(189, 118, 220, 0.966);
 }
+/*Tempat menampung gambar yang akan di autoslide*/
 .container {
   width: 100%;
   height: 250px;
 }
+/* Style gambar auto slide */
 .images img {
   width: 100%;
   height: 250px;
   display: none;
 }
+/* Agar ketika autoslide gambar yang tampil berganti */
 .images img:first-child {
   display: block;
 }
 
+/* Tempat ukuran testimoni */
+.main-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Ukuran caption testimoni */
 .caption {
   margin-right: 20px;
   margin-left: 20px;
 }
-.error-message {
-  color: red;
-  margin-bottom: 15px;
-  font-size: 15px;
-  align-self: flex-start;
-  margin-left: 100px;
-}
+
+/* Ukuran profil pengguna */
 .item-icon {
   height: 50px;
   width: 50px;
@@ -96,16 +120,12 @@ nav {
   background-size: cover;
   margin-right: 9px;
 }
-.main-item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 20px;
-}
+
+/* Batas elemen div pada main-item */
 .main-item div {
   margin-left: 15px;
 }
+/* Ukuran huruf nama/tempat pada main-item */
 .main-item h6 {
   margin: 0;
   font-size: 1.5em;
@@ -114,134 +134,8 @@ nav {
   margin: 0;
   font-size: 1em;
 }
-input {
-  width: 75%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: monospace;
-}
-.tombol {
-  margin-bottom: 100px;
-}
-button {
-  height: 38px;
-  background-color: rgb(104, 188, 214);
-  border: none;
-  padding: 12px;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.button1 {
-  width: 75%;
-}
-.button2 {
-  width: 30%;
-  margin: 0 auto;
-}
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  background: #333;
-  color: white;
-}
-.copyright-text {
-  color: var(--color-lgrey);
-  text-align: center;
-  font-family: "Roboto", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-    "Hiragino Sans", "游ゴシック", YuGothic, "メイリオ", sans-serif;
-  font-weight: 500;
-}
-label {
-  text-align: left;
-  width: 75%;
-  font-size: 15px;
-}
-select {
-  width: 75%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: monospace;
-}
-.col-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  padding: 40px;
-}
-h6 {
-  font-family: cursive;
-}
-.p-list {
-  text-align: start;
-}
-.places {
-  display: flex;
-}
-.bintang {
-  display: flex;
-}
-h2 {
-  text-align: center;
-  padding: 1px;
-  margin-top: 50px;
-}
-.item-icon2-list {
-  height: 50px;
-  width: 50px;
-  background-image: url("https://cdn-icons-png.flaticon.com/128/4283/4283062.png");
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin-right: 9px;
-}
-.item-icon2-bintang {
-  height: 50px;
-  width: 50px;
-  background-image: url("https://cdn-icons-png.flaticon.com/128/477/477406.png");
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin-right: 9px;
-}
-.divider {
-  width: 90px;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-}
-.divider2 {
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.divider3 {
-  background-color: none;
-  height: 20px;
-  border: none;
-}
-.divider4 {
-  background-color: none;
-  height: 0px;
-  border: none;
-}
+
+/* style alasan pemilihan layanan*/
 .reason {
   width: 100%;
   margin-top: 30px;
@@ -269,15 +163,171 @@ h2 {
 .item-icon4 {
   background-image: url("../assets/number-4.png");
 }
-.quote {
-  text-align: center;
+
+/* Bagian kedua, kotak pengisian form */
+input {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
+/* Pesan eror form validation */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 15px;
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
+/* Ukuran tombol */
+.tombol {
+  margin-bottom: 100px;
+}
+button {
+  height: 38px;
+  background-color: rgb(104, 188, 214);
+  border: none;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button1 {
+  width: 75%;
+}
+.button2 {
+  width: 30%;
+  margin: 0 auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Tempat inputan text*/
+label {
+  text-align: left;
+  width: 75%;
+  font-size: 15px;
+}
+/* Form select */
+select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+/* Setion kedua membagi tampilan our package*/
+.col-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+/* membagi list tempat packages */
+.places {
+  display: flex;
+}
+/* jenis font judul tempat */
+h6 {
+  font-family: cursive;
+}
+/* posisi paragrap */
+.p-list {
+  text-align: start;
+}
+
+.bintang {
+  display: flex;
+}
+h2 {
+  text-align: center;
+  padding: 1px;
+  margin-top: 50px;
+}
+
+/* style icon luar negeri */
+.item-icon2-list {
+  height: 50px;
+  width: 50px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/4283/4283062.png");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 9px;
+}
+/* style icon dalam negeri */
+.item-icon2-bintang {
+  height: 50px;
+  width: 50px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/477/477406.png");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 9px;
+}
+
+/* style beberapa pembatas */
+.divider {
+  width: 90px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+.divider2 {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.divider3 {
+  background-color: none;
+  height: 20px;
+  border: none;
+}
+.divider4 {
+  background-color: none;
+  height: 0px;
+  border: none;
+}
+
+/* posisi teks section call us*/
 .quote {
+  text-align: center;
   padding: 20px;
 }
 
-/* Media Queries */
+/* style footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #333;
+  color: white;
+}
+.copyright-text {
+  color: var(--color-lgrey);
+  text-align: center;
+  font-family: "Roboto", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    "Hiragino Sans", "游ゴシック", YuGothic, "メイリオ", sans-serif;
+  font-weight: 500;
+}
+
+/* Media Queries agar Responsif*/
 @media (max-width: 1024px) {
   .col-list {
     flex-direction: row;
@@ -307,12 +357,17 @@ h2 {
 @media (max-width: 480px) {
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .nav-item {
     margin: 5px 0;
   }
   .main-item {
     padding: 10px;
+  }
+  .main-content {
+    padding: 20px;
+    flex-direction: column;
+    margin: 0px;
   }
 }
