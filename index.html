@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <nav id="home">
+    <hr class="divider4" id="home" />
+    <nav>
       <header>
         <div class="logo-icon"></div>
       </header>
 
       <section class="nav-container" id="navigation">
-        <a class="nav-item" id="navigation2" href="#home">Home</a>
-        <a class="nav-item" id="navigation2" href="#package-section"
+        <a class="nav-item" id="nav-home" href="#home">Home</a>
+        <a class="nav-item" id="nav-package" href="#package-section"
           >Our Package</a
         >
-        <a class="nav-item" id="navigation2" href="#closing-id">Call Us</a>
+        <a class="nav-item" id="nav-call" href="#closing-id">Call Us</a>
       </section>
     </nav>
 
@@ -119,7 +120,6 @@
             placeholder="First and last name"
             id="name"
             name="name"
-            required
           />
           <label for="email">Email Address: </label>
           <input
@@ -127,10 +127,9 @@
             placeholder="example@gmail.com"
             id="email"
             email="email"
-            required
           />
           <label for="ask">What are you interested in? </label>
-          <select id="ask" name="ask" required>
+          <select id="ask" name="ask">
             <option value="" disabled selected hidden>Select option</option>
             <option value="1">Open Trip</option>
             <option value="2">Solo Traveler</option>
@@ -142,7 +141,9 @@
         </form>
       </section>
 
-      <section class="package" id="package-section">
+      <hr class="divider3" id="package-section" />
+
+      <section class="package">
         <h2>Our Package</h2>
         <div class="col-list">
           <div class="places">

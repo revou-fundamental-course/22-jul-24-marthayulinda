@@ -7,11 +7,14 @@ nav {
   justify-content: space-between;
   padding: 12px;
   align-items: center;
-  background: rgba(255, 255, 255, 0.3); /* Warna background semi-transparan */
-  backdrop-filter: blur(10px); /* Efek kaca buram */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Efek kaca buram untuk Safari */
-  border-radius: 8px; /* Opsional: membuat sudut melengkung */
-  border: 1px solid rgba(255, 255, 255, 0.18); /* Opsional: menambahkan border semi-transparan */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -23,8 +26,10 @@ nav {
   text-decoration: none;
   color: black;
 }
-a:hover {
-  color: rgb(0, 0, 0);
+.nav-item:hover {
+  font-weight: bold;
+}
+.nav-item.active {
   font-weight: bold;
 }
 .logo-icon {
@@ -42,6 +47,7 @@ a:hover {
   padding: 50px;
   margin-left: 60px;
   margin-right: 60px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -74,6 +80,13 @@ a:hover {
 .caption {
   margin-right: 20px;
   margin-left: 20px;
+}
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 15px;
+  align-self: flex-start;
+  margin-left: 100px;
 }
 .item-icon {
   height: 50px;
@@ -186,6 +199,7 @@ h6 {
 h2 {
   text-align: center;
   padding: 1px;
+  margin-top: 50px;
 }
 .item-icon2-list {
   height: 50px;
@@ -207,16 +221,27 @@ h2 {
 }
 .divider {
   width: 90px;
-  height: 3px; /* Ketebalan garis */
+  height: 3px;
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
 }
 .divider2 {
-  height: 3px; /* Ketebalan garis */
+  height: 3px;
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
+.divider3 {
+  background-color: none;
+  height: 20px;
+  border: none;
+}
+.divider4 {
+  background-color: none;
+  height: 0px;
+  border: none;
+}
 .reason {
   width: 100%;
   margin-top: 30px;
