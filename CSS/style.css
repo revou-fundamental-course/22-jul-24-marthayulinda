@@ -62,6 +62,7 @@ dan aktif ketika sedang berada di halamannya*/
   margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
+  gap: 4rem 1.5rem;
 }
 
 /* Bagian Pertama dari main content */
